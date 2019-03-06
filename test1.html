@@ -12,6 +12,9 @@
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
+		<!-- Plugin to include progress bar at bottom of page -->
+		<link rel="stylesheet" href="plugin/toc-progress/toc-progress.css">
+
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -23,9 +26,42 @@
 	</head>
 	<body>
 		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+		  <div class="slides">
+		    <section>
+		      <h3> Robust Learning and Flexible Task Representations from High-Dimensional, Variable Sensory Signals </h3>
+		    </section>
+		    <section>
+		      <h3> Overview </h3>
+		      <ul>
+			<li class="fragment"> Generating Flexible Task Representations </li>
+			<li class="fragment"> Learning from Variable Demonstrations </li>
+			<li class="fragment"> Active Exploration for Learning with High-Dimensional Sensory Signals </li>
+			<li class="fragment"> Active Learning from Demonstration for High-Dimensional Systems </li>
+		    </section>
+		    <section>
+		      <section>
+			<h2>Generating Flexible Task Representations</h2>
+		      </section>
+		      <section>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/NwZvmD2McVI?start=17&end=25&autoplay=0" frameborder="0"></iframe>
+		      </section>
+		      
+		      <section>
+			<h3> Tasks are Flexible</h3>
+			<p class="fragment"> Robust to trajectory uncertainty </p>
+			<p class="fragment"> Different solutions to accomplish the same task </p>
+			<p style="color:#42affa;" class="fragment"> A task is defined by higher-level information than a single motion trajectory </p> 
+		      </section>
+				<section> Flexible Task Representations </section>
+		    </section>
+		    <section><h2> Learning from Variable Demonstrations </h2></section>
+		    <section>
+		      <h3> Learning from Demonstration </h3>
+		      			<iframe width="560" height="315" src="https://www.youtube.com/embed/NwZvmD2McVI?start=38&end=49&autoplay=0" frameborder="0"></iframe>
+		    </section>
+		      <section> Variable Demonstrations </section>
+		    </section>
+		    
 			</div>
 		</div>
 
@@ -40,8 +76,9 @@
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+			{ src: 'plugin/notes/notes.js', async: true },
+			 <!-- { src: 'plugin/toc-progress/toc-progress.js', async: true, callback: function() { toc_progress.initialize(); toc_progress.create(); } }, --> 
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); }}
 				]
 			});
 		</script>
